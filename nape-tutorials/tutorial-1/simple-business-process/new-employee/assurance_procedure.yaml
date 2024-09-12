@@ -34,3 +34,12 @@ activity:
         description: "The new employee has to complete phishing awarenes training."
         test: "activity/onboarding-training/data-protection-and-privacy-lms-video.py"
         evidence: "evidence/lms-training/lms-training-video-data-protection.xml"
+  - name: peer-review
+    short: "Peer Review"
+    description: "This activity verifies that proper peer review controls are in place for a merge into main."
+    action:
+      - name: atleast-two-pr-reviewers
+        short: "Atleast Two Reviewers"
+        description: "There are atleast two (2) folks who reviewed the pull request."
+        test: "activity/peer-review/atleast-two-reviewers.py"
+        evidence: "evidence/peer-review/github-pr.json"
