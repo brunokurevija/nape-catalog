@@ -43,5 +43,3 @@ activity:
         description: "There are atleast two (2) folks who reviewed the pull request."
         test: "activity/peer-review/atleast-two-reviewers.py"
         evidence: "evidence/atleast-two-pr-reviewers/github-pr.json"
-
-        atleast-two-pr-reviewers
